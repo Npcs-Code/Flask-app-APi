@@ -6,7 +6,10 @@ import get_allMan
 app = Flask(__name__)
 
 
-
+@app.route("/")
+@cross_origin()
+def home():
+    return "flask heroku app."
 
 @app.route('/get_page_home_items/<int:id>')
 @cross_origin()
@@ -34,11 +37,7 @@ def get_page_single_chapter(name,chapter):
     return data
 
 
-@app.route("/api")
-@cross_origin()
-def api():
-    value = get_allMan.p()
-    return {"id": ["nn" , "ddd" , "ddd", value] }
+
 
 if __name__ == '__main__':
     app.run(debug=True)
