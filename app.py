@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/")
 @cross_origin()
 def home():
-    return "flask heroku app."
+    return render_template("index.html", title="My Home Page")
 
 @app.route('/get_page_home_items/<int:id>')
 @cross_origin()
