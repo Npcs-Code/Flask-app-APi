@@ -11,25 +11,25 @@ app = Flask(__name__)
 def home():
     return render_template("index.html", title="My Home Page")
 
-@app.route('/get_page_home_items/<int:id>')
+@app.route('/get-page-home-items/<int:id>')
 @cross_origin()
 def get_page_home_items(id):
     data = get_allMan.get_page_home_items(id)
     return data
 
-@app.route('/get_page_category/<string:catey>/page/<int:id>')
+@app.route('/get-page-category/<string:catey>/page/<int:id>')
 @cross_origin()
 def get_page_category(catey , id):
     data = get_allMan.get_page_category_items(catey,id)
     return data
 
-@app.route("/get_page_single_item/<string:name>")
+@app.route("/get-page-single-item/<string:name>")
 @cross_origin()
 def get_page_single_item(name):
     data = get_allMan.get_page_single_item(name)
     return data
 
-@app.route("/get_page_single_chapter/<string:name>/<string:chapter>")
+@app.route("/get-page-single-chapter/<string:name>/<string:chapter>")
 @cross_origin()
 def get_page_single_chapter(name,chapter):
     data = get_allMan.get_page_single_chapter(name,chapter)
