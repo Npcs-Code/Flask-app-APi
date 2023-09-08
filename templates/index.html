@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLask API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="h-[100vh] flex">
+      <div class="max-w-[1400px] m-auto px-[50px]">
+        <h2 class="font-bold text-[50px] text-center">FLask API</h2>
+        <div class="">
+          <h3 class="text-[20px]">
+            To Scraping All Elements of a Specific Page :
+          </h3>
+          <div class="pl-5 grid gap-2">
+            <p class="text-[18px]">1 > by number Of page.</p>
+            <h2 class="text-[18px]">Example Code</h2>
+            <div class="bg-black text-white p-5">
+              <blockquote id="example">
+                <code class="">
+                  <span class="text-[#6d9cbe]">fetch</span>(<span
+                    class="text-[#a5c261]"
+                    >'http://127.0.0.1:5000/get_page_home_items/1'</span
+                  >) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(res => res.<span
+                    class="text-[#6d9cbe]"
+                    >json</span
+                  >()) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(json =>
+                  <span class="text-[#da4939]">console</span>.<span
+                    class="text-[#6d9cbe]"
+                    >log</span
+                  >(json))
+                </code>
+              </blockquote>
+            </div>
+            <p class="">2 > by Category Of elements.</p>
+            <h2 class="">Example Code</h2>
+            <div class="bg-black text-white p-5">
+              <blockquote id="example">
+                <code class="">
+                  <span class="text-[#6d9cbe]">fetch</span>(<span
+                    class="text-[#a5c261]"
+                    >'http://127.0.0.1:5000//get_page_category/{Category-Name}/page/{number-page}'</span
+                  >) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(res => res.<span
+                    class="text-[#6d9cbe]"
+                    >json</span
+                  >()) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(json =>
+                  <span class="text-[#da4939]">console</span>.<span
+                    class="text-[#6d9cbe]"
+                    >log</span
+                  >(json))
+                </code>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <p class="text-[20px]">To scraping deteile element :</p>
+          <div class="pl-5 grid gap-2">
+            <p class="">1 > by name Of element.</p>
+            <h2 class="">Example Code</h2>
+            <div class="bg-black text-white p-5">
+              <blockquote id="example">
+                <code class="">
+                  <span class="text-[#6d9cbe]">fetch</span>(<span
+                    class="text-[#a5c261]"
+                    >'http://127.0.0.1:5000/get_page_single_item/{Name}'</span
+                  >) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(res => res.<span
+                    class="text-[#6d9cbe]"
+                    >json</span
+                  >()) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(json =>
+                  <span class="text-[#da4939]">console</span>.<span
+                    class="text-[#6d9cbe]"
+                    >log</span
+                  >(json))
+                </code>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <p class="text-[20px]">To scraping Images of a specific Chaptre :</p>
+          <div class="pl-5 grid gap-2">
+            <p class="">1 > by name or number Of Chaptre.</p>
+            <h2 class="">Example Code</h2>
+            <div class="bg-black text-white p-5">
+              <blockquote id="example">
+                <code class="">
+                  <span class="text-[#6d9cbe]">fetch</span>(<span
+                    class="text-[#a5c261]"
+                    >'http://127.0.0.1:5000/get_page_single_chapter/{name}/{chapter}'</span
+                  >) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(res => res.<span
+                    class="text-[#6d9cbe]"
+                    >json</span
+                  >()) <br />
+                  .<span class="text-[#6d9cbe]">then</span>(json =>
+                  <span class="text-[#da4939]">console</span>.<span
+                    class="text-[#6d9cbe]"
+                    >log</span
+                  >(json))
+                </code>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
