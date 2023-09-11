@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 
-url = "https://mangalek.com/"
+url = ""
 
 def find_All(soup, tagType , tagClassName=""):
     if tagClassName != "":
